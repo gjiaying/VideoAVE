@@ -19,7 +19,7 @@ For implementing CLIP-MoE data curation steps:
 ```
 python CLIP-MoE.py
 ```
-The output will be training data and testing data in Dataset folder.
+The output will be the same as training data and testing data provided in Dataset folder. 
 
 ### Benchmarks Inference
 
@@ -33,9 +33,9 @@ python qwen.py
 
 ### Benchmarks Finetuning
 
-We use LLaMA-Factory for fine-tuning Qwen2.5-VL. data_info and yaml files are provided in model_training. Here is the fine-tuning steps:
+We use [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) for fine-tuning Qwen2.5-VL. data_info and yaml files are provided in model_training. Here is the fine-tuning steps:
 
-* Clone LLaMa-Factory Repo and setup the environment.
+* Clone [LLaMa-Factory](https://github.com/hiyouga/LLaMA-Factory) Repo and setup the environment.
 * Generating training data in LLaMA-Factory data format. Please refer to:
 ```
  ./data_processing/training_data_processing.ipynb
